@@ -1,0 +1,46 @@
+.bg-custom2 {
+    background-color: #F4FBFF;
+    height: 746px; 
+  }
+  
+  .text-custom2 {
+    color: #007CBD;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25; 
+    margin-top: 4%; 
+  
+   
+    /* Adjust font size for smaller screens (iPad and Mobile) */
+    @media (max-width: 768px) and (max-width: 1080px)  {
+      font-size: 28px;
+      margin-top: -5%;
+      height: 120vh;
+    padding-top: 10%;
+    }
+
+  
+    
+    /* Adjust font size for mobile screens */
+    @media (max-width: 767px) {
+      font-size: 24px;
+      margin-top: -50px;
+  
+    }
+  
+   
+  }
+  
+  /* Remove unnecessary styles */
+  .sc-2 {
+    padding-left: 1%;
+  }
+  
+  /* Apply Bootstrap's responsive classes for spacing */
+  @media (max-width: 767px) {
+    .sc-2 {
+      margin-top: -10px; /* Adjust as needed */
+    }
+  }
+  

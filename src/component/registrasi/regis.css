@@ -1,0 +1,55 @@
+.img-regis{
+    height: 400px;
+    width: 1300px;
+}
+
+.form-regis{
+    background-color:#F4FBFF ;
+    height: 950px;
+
+}
+
+.form2-regis{
+    position: relative;
+    margin-top: -8%;
+    margin-left: 5%;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 576px) {
+    .form-regis {
+      /* For mobile devices, center the form */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .form2-regis {
+      /* For mobile devices, set the width to 100% */
+      width: 100%;
+    }
+  }
+  
+  /* Media Query for iPads (portrait mode) */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .form2-regis {
+      /* For iPads in portrait mode, set a specific width */
+      width: 50%;
+      margin: 0 auto; /* Center the form horizontally */
+    }
+  }
+  
+  /* Media Query for iPads (landscape mode) */
+  @media screen and (min-width: 1025px) {
+    .form-regis {
+      /* For iPads in landscape mode, use flexbox for 2-column layout */
+      display: flex;
+      justify-content: center;
+    }
+  
+    .form2-regis {
+      /* For iPads in landscape mode, set a specific width */
+      width: 50%;
+      margin-right: 20px; /* Add some spacing between the form and other elements */
+    }
+  }

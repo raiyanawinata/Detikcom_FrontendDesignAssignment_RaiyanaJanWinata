@@ -1,0 +1,95 @@
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: transparent;
+  }
+  
+  .slider {
+    height: 144px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+    padding: 0;
+  }
+  
+  .slider::before,
+  .slider::after {
+    content: "";
+    background: linear-gradient(to right, 0%, rgba(255, 255, 255, 0) 100%);
+    height: 144px;
+    position: absolute;
+    width: 291px;
+    z-index: 2;
+  }
+  
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  
+  .slide-track {
+    animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(160px * 14); /* Mengurangi lebar total untuk jarak yang lebih dekat */
+    margin-left: -80px; /* Mengkompensasi margin kiri agar gambar pertama berada di tengah */
+  }
+  
+  .slide {
+    height: 144px;
+    width: 291px; /* Mengurangi lebar slide untuk jarak yang lebih dekat */
+    margin: 0 5px; /* Menambahkan margin sebesar 5px untuk jarak yang lebih dekat */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-160px * 7)); /* Mengurangi pergeseran untuk jarak yang lebih dekat */
+    }
+  }
+  /* Responsive styles for iPad */
+@media (max-width: 1024px) {
+    .slider {
+      max-width: 768px; /* Limit the width for iPad */
+     margin-top: -55%;
+    }
+  
+    .slide {
+      width: 192px; /* Adjust the width for iPad */
+      margin: 0 60px; /* Add margin for spacing between images on iPad */
+      
+    }
+  
+    .slide-track {
+      margin-left: -20px; /* Compensate margin left to center the first image on iPad */
+    }
+  }
+
+  /* Responsif untuk perangkat mobile */
+@media (max-width: 767px) {
+    .slider {
+      max-width: 320px; /* Mengurangi lebar slider untuk perangkat mobile */
+      
+    }
+  
+    .slide {
+      width: 80px; /* Mengurangi lebar slide untuk perangkat mobile */
+      margin: 0 5%; /* Menambahkan margin sebesar 2px untuk jarak yang lebih dekat pada perangkat mobile */
+      
+    }
+  
+    .slide-track {
+      margin-left: -20px; /* Mengkompensasi margin kiri agar gambar pertama berada di tengah pada perangkat mobile */
+    }
+  }
+  

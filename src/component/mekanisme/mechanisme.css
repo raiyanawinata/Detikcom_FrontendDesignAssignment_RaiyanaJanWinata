@@ -1,0 +1,76 @@
+/* Common styles for all screen sizes */
+.image-mechanism{
+    height: 1000px;
+    
+}
+  
+  .mechanism-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: -30%;
+    margin-top: -70%;
+    
+  }
+  
+  .text-5xl {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: white;
+    padding-bottom: 20px;
+    margin-bottom: 4px;
+    margin-left: 1vh;
+  }
+  
+  .mechanism-container .mechanism {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3vh;
+    flex-grow: 1;
+  }
+  
+  /* Responsive Styles */
+ 
+  /* iPad */
+  @media (min-width: 768px) and (max-width: 1080px) {
+    
+    .image-mechanism {
+        height: 120vh; /* Adjust the height for Desktop */
+        
+    }
+    
+      .text-5xl {
+        font-size: 32px; /* Keep the same font size for Desktop */
+        padding-top: 5%;
+    }
+    .mechanism-container{
+        margin-top: -90%;
+    }
+    
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) and (max-width: 1000px){
+    .image-mechanism {
+        margin-top: 30%;
+      height: 150vh; /* Adjust the height for Mobile */
+    }
+  
+    .text-5xl {
+      font-size: 24px; /* Adjust the font size for Mobile */
+    }
+
+    .mechanism-container{
+
+        margin-top: -300%;
+        width: 200px;
+        height: auto;
+    }
+  }
+  
+  

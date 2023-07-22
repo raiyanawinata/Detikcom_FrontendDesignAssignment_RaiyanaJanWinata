@@ -1,0 +1,92 @@
+/* Footer styles for larger screens (desktop) */
+.footer-container {
+    background-color: #007cbd;
+    height: 244px;
+    padding-left: 20px; /* Add left padding to create some space */
+  }
+  
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 40px;
+   
+  }
+  
+  .footer-logo {
+    width: 250px;
+    height: 66px;
+  }
+  
+ 
+  .tekscap {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.07px;
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+  
+  .footer-icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 15px;
+    margin-top: -4%;
+  }
+  
+  .footer-icon-container {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  .footer-hr {
+    margin: 8px;
+    border-color: #D2D6DC;
+  }
+  
+  .footer-text {
+    color: white;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: Montserrat;
+    margin-left: 3px;
+  }
+  
+  /* Footer styles for smaller screens (iPad and mobile) */
+  @media (max-width: 1024px) {
+    .footer-container {
+      padding-left: 2%;
+      padding-top: 2%; /* Reset left padding for smaller screens */
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+    }
+  
+    .footer-icon{
+        margin-top: 1px;
+    }
+    .footer-logo {
+      width: 200px;
+      height: 53px;
+      margin-left: 2%;
+    }
+  
+    .text-center2 {
+      justify-content: center;
+    }
+
+    .footer-text{
+        margin-left: 2%;
+    }
+
+    .tekscap{
+        margin-left: 2%;
+    }
+  }
+  

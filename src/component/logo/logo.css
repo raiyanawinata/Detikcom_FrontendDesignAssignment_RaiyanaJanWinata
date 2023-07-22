@@ -1,0 +1,107 @@
+/* Common styles for all screen sizes */
+.bg-custom {
+    background-color: #F4FBFF;
+    text-align: center; /* Center align the content */
+    height: 500px;
+}
+  
+  .text-custom {
+    color: #007CBD;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.94px;
+    margin-top: -20%; /* Add some margin to the top */
+  }
+  
+  .sc-logo {
+    margin-top: -28%;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%; /* Add some margin to the button container */
+  }
+  
+  /* Button styles */
+  .bg-3EB7DD {
+    align-items: center;
+    justify-content: center;
+    background-color: #3EB7DD;
+    color: white;
+    border-radius: 5px;
+    width: 221px;
+    height: 49px;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 800;
+    white-space: nowrap;
+    margin-top: -3%;
+    border-color: transparent;
+  }
+  
+  .btn:active {
+    background-color: #3EB7DD;
+  }
+  
+  /* Responsive Styles */
+ 
+  /* iPad */
+  @media (max-width: 1080px)  {
+    .bg-custom{
+        margin-top: -10%;
+    }
+    .logo {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .text-custom {
+      font-size: 16px;
+      margin-top: 15%;
+    }
+  
+    .bg-3EB7DD {
+      width: 200px;
+      height: 40px;
+      font-size: 12px;
+    
+    }
+  
+    .sc-logo {
+      margin-top: -19%;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .bg-custom {
+      padding: 10px;
+      
+    }
+  
+    .text-custom {
+      font-size: 9px;
+    }
+  
+    .bg-3EB7DD {
+      width: 170px;
+      height: 35px;
+      font-size: 10px;
+    }
+  
+    .sc-logo {
+      margin-top: -85%;
+    }
+  
+    .bg-3EB7DD {
+      margin-top: 3%;
+    }
+  }
+  

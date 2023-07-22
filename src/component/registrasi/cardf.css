@@ -1,0 +1,52 @@
+/* Common styles for all screen sizes */
+.cardf-bg {
+    background-color: #F4FBFF;
+    width: 199px;
+    height: 200px;
+    border-radius: 8px;
+    left: 20px;
+    top: 385px;
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .cardf-container {
+    display: flex;
+    flex-direction: row; /* Set the default layout to horizontal */
+    justify-content: flex-start; /* Align to the left */
+    margin-left: 20px; /* Add some left padding */
+    margin-top: 15%;
+    margin-bottom: 10vh;
+    padding-left: 1%;
+    width: 100%; /* Adjust to full width on all screen sizes */
+    height: auto; /* Remove fixed height to allow dynamic height */
+    padding-top: 3%;
+    flex-wrap: wrap; /* Allow cards to stack vertically on mobile */
+  }
+
+
+  .cardf-costum {
+    border: none;
+    background-color: transparent;
+    
+
+  }
+  
+  .cardf-imga {
+    width: 39px;
+    height: 39px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8vh;
+    margin-top: 5vh;
+    
+   
+  }
+  
+  
+
+  
+  
+  

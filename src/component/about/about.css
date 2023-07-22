@@ -1,0 +1,160 @@
+/* Common styles for all screen sizes */
+.about-bg {
+    background-color: #F4FBFF;
+    
+    height: 420px;
+    margin-top: -19%;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: row; /* Set the default layout to horizontal */
+    justify-content: flex-start; /* Align to the left */
+    margin-left: 20px; /* Add some left padding */
+    margin-top: 15%;
+    margin-bottom: 10vh;
+    padding-left: 1%;
+    width: 100%; /* Adjust to full width on all screen sizes */
+    height: auto; /* Remove fixed height to allow dynamic height */
+    padding-top: 3%;
+    flex-wrap: wrap; /* Allow cards to stack vertically on mobile */
+  }
+
+  .about-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5%;
+    color: #007CBD;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+   
+    
+  }
+  
+  .text-about{
+    color: #1B1E28;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: Montserrat;
+    text-align: center;
+    
+    
+    
+  }
+  .about-costum {
+    border: none;
+    background-color: transparent;
+    margin-top: 7%;
+  }
+  
+  .card-imga {
+    width: 392px;
+    height: 220px;
+  }
+  
+  
+  .card-title {
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .share-text {
+    color: #007CBD;
+    font-weight: 400;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  .icon-about {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+
+  .card-about {
+    margin-left: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column */
+    justify-content: center;
+    align-items: center; /* Center align the elements horizontally */
+    font-family: Montserrat;
+    width: 100%; /* Set the cards to occupy full width on all screen sizes */
+  }
+
+/* Responsive styles for dekstop */
+@media (max-width: 1080px) {
+ 
+  .about-bg{
+    margin-top: -55vh;
+    height: 60vh;
+  }
+  .about-container {
+    max-width: 1024px; /* Limit the max width for iPad and above */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45vh;
+  }
+
+  .card-imga {
+    width: 50%; /* Adjust the width for iPad */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+
+  .card-about {
+    margin-left: 10px;
+    width: 45%; /* Reduce the card width for iPad */
+  }
+
+  
+
+  .about-costum{
+    margin-top: 8%;
+    
+  }
+
+  .about-title{
+    font-size: 10px;
+    margin-left: 5%;
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  .about-container {
+    margin-top: -88%; /* Adjust the margin for better spacing on mobile */
+    justify-content: center; /* Center align the elements on mobile */
+    flex-direction: column; /* Set the flex direction to column for mobile */
+    align-items: center; /* Center align the elements horizontally */
+  }
+
+  .card-imga {
+    width: 350px; /* Adjust the width for mobile */
+    height: 250px; /* Allow the height to adjust proportionally */
+  }
+
+  .card-about {
+    width: 100%; /* Set the cards to occupy full width on mobile */
+    margin-top: 30%; /* Add some spacing between the image and text */
+    margin-left: -50%; /* Remove the negative margin */
+    text-align: justify;
+    max-width: 350px; /* Limit the width of the text container */
+  }
+
+  .about-title {
+    margin-top: 35px; /* Add spacing between the title and text */
+    font-size: 13px;
+    margin-left: 5px; /* Align "About" with "About Title" on the left */
+  }
+
+  .text-about {
+    margin-left: 5px;
+  }
+}
